@@ -1,0 +1,129 @@
+/* Declaración de variables */
+
+:root {
+   --main-color:rgb(35, 159, 163); 
+   --second-color:rgb(130, 191, 202);
+   --lime-color:rgb(145, 201, 71);
+}
+
+
+/* Estilos generales */
+
+body {
+    font-family: "open sans";
+}
+
+
+/* Contenedor */
+
+.wrapper {
+    box-shadow: 10px 10px 90px -23px rgba(0,0,0,0.75);
+    border-radius: .5rem;
+    height:auto;
+    margin:5rem auto;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    width:800px;
+
+}
+/* Layout */
+.wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "join join"
+                         "sub why";
+}
+
+.join-us {
+    grid-area:join;
+}
+
+.subscription {
+    grid-area:sub;
+}
+
+.why-us {
+    grid-area:why;
+}
+
+/* Estilos primera sección (JOIN) */
+
+.join-us {
+    padding:3rem;
+   
+}
+
+.join-us__title {
+    color:var(--main-color);
+}
+
+.join-us__subtitle{
+    color:var(--lime-color);
+}
+
+.join-us__paragraph {
+    color:#ccc;
+}
+
+/* Estilos segunda sección (SUB) */
+
+.subscription {
+    background-color:var(--main-color);
+    padding:2rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.subscription__title {
+    color:#fff;
+}
+
+.subscription__price {
+    color:#fff;
+    font-size: 2rem;
+    display: inline;
+    
+}
+
+.subscription__duration {
+    color:#ccc;
+    display: inline;
+}
+
+.subscription__info {
+    color:#fff;
+}
+
+.subscription__btn {
+    background-color: var(--lime-color);
+    padding:1rem 3rem;
+    margin:0 auto;
+    display:block;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+
+/* Estilos tercera sección (WHY) */
+
+.why-us {
+    background-color: var(--second-color);
+    padding:2rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.why-us__title{
+    color:#fff;
+}
+
+.why-us__info {
+    list-style: none;
+    margin:0;
+    padding:0;
+    color:#ddd;
+}
